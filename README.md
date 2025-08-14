@@ -104,7 +104,7 @@ The project includes:
 
 ---
 
-### 🔹How to Run Locally
+## 🔹 **How to Run Locally **
 # 1. Clone repo
 git clone [https://github.com/Sandhya385/DemandForecasting_Flask.git]
 cd demand_forecasting
