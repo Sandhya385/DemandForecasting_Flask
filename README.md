@@ -5,9 +5,9 @@ This project predicts **future demand** for a single product using **3.5 years o
 The forecasting is performed using **SARIMAX** (statistical approach) and **XGBoost**(machine learning approach).
 
 The project includes:
--A **Flask API** deployed on Render for real-time forecasting
--An **interactive Power BI dashboard** for visualization and insights
--Simulation capabilities to test hypothetical demand scenarios
+- A **Flask API** deployed on Render for real-time forecasting
+- An **interactive Power BI dashboard** for visualization and insights
+- Simulation capabilities to test hypothetical demand scenarios
 
 ---
 
@@ -41,10 +41,11 @@ The project includes:
 ---
 
 ## 🔹 Flask API 
-**Live API URL**
+**Live API URL**  
 🔗 https://demandforecasting-flask-1.onrender.com/
 
 ---
+
 ## 🔹 Screenshots
 
 | Feature                       | Screenshot |
@@ -68,18 +69,21 @@ The project includes:
 ---
 
 **Example Local URL:**  
-'http://127.0.0.1:5000/forecast'
+`http://127.0.0.1:5000/forecast`
 
 ## 🔹 Technologies Used
 
--Python (Pandas, NumPy, Scikit-learn, Statsmodels, XGBoost)
--Flask (for API deployment)
--Power BI (for visualization)
--Render (for hosting)
--Matplotlib / Seaborn (for plots)
+- Python (Pandas, NumPy, Scikit-learn, Statsmodels, XGBoost)
+- Flask (for API deployment)
+- Power BI (for visualization)
+- Render (for hosting)
+- Matplotlib / Seaborn (for plots)
+
+---
 
 ## 🔹 DemandForecasting_Flask
 
+```plaintext
 │── app.py                  # Flask API script
 │── requirements.txt        # Python dependencies
 │── predictions.ipynb       # Historical dataset
@@ -98,7 +102,7 @@ The project includes:
 │    └── Simulation_Singlerecord.PNG
 │── README.md
 
-
+---
 
 ### 🔹How to Run Locally
 # 1. Clone repo
