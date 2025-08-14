@@ -79,6 +79,7 @@ The project includes:
 -Matplotlib / Seaborn (for plots)
 
 ## 🔹 DemandForecasting_Flask
+
 │── app.py                  # Flask API script
 │── requirements.txt        # Python dependencies
 │── predictions.ipynb       # Historical dataset
