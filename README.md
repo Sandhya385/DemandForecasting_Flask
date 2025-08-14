@@ -30,5 +30,5 @@ The forecasting is performed using **SARIMAX** and **XGBoost**, deployed as a Fl
 
 ## 🔹 API Endpoint
 The forecasting API is hosted on Render:  
-`https://<your-render-url>.onrender.com/forecast`
+'https://demandforecasting-flask-1.onrender.com/'
 
