@@ -32,3 +32,16 @@ The forecasting is performed using **SARIMAX** and **XGBoost**, deployed as a Fl
 The forecasting API is hosted on Render:  
 'https://demandforecasting-flask-1.onrender.com/'
 
+### Forecast Accuracy
+- **SARIMAX**: RMSE = 20.09, MAE = 17.22  
+- **XGBoost**: RMSE = 7.78, MAE = 6.1
+
+## To Run Locally
+git clone https://github.com/Sandhya385/DemandForecasting_Flask.git
+cd DemandForecasting_Flask
+pip install -r requirements.txt
+python app.py
+# Then visit http://127.0.0.1:5000/forecast
+
+
+
