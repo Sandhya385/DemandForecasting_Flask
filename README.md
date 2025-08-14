@@ -78,7 +78,7 @@ The project includes:
 -Render (for hosting)
 -Matplotlib / Seaborn (for plots)
 
-## DemandForecasting_Flask/
+## 🔹 DemandForecasting_Flask
 │── app.py                  # Flask API script
 │── requirements.txt        # Python dependencies
 │── predictions.ipynb       # Historical dataset
@@ -107,7 +107,7 @@ cd demand_forecasting
 # 2. Install dependencies
 pip install -r requirements.txt
 
-# 3. Run Flask API
+# 3. Flask API
 python app.py
 
 # 4. Access API
