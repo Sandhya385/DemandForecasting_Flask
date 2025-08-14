@@ -39,18 +39,18 @@ The API is hosted at:
 
 ---
 ## 🔹 Screenshots ##
-Power BI Dashboard
-Flask API UI
-7day forecast
-Single record simulation
+-Power BI Dashboard (screenshots/powerbi_dashboard.PNG)
+-Flask API UI (screenshots/flask_API_UI.PNG)
+-7day forecast (screenshots/forecast.PNG)
+-Single record simulation (screenshots/Simulation_Singlerecord.PNG)
 
-### Forecast Accuracy -
+### 🔹Forecast Accuracy -
 - **SARIMAX**: RMSE = 20.09, MAE = 17.22 
 - **XGBoost**: RMSE = 7.78, MAE = 6.1
 
-  ---
+---
   
-### API Endpoint
+### 🔹API Endpoint
 `/forecast`
 
 ---
@@ -58,22 +58,7 @@ Single record simulation
 **Example Local URL:**  
 'http://127.0.0.1:5000/forecast'
 
----
-
-**Folder Structure**
-
-DemandForecasting_Flask/
-│
-├── app.py                # Flask API script
-├── requirements.txt      # Python dependencies
-├── model/                # Trained models
-├── data/                 # Dataset
-├── screenshots/          # All project screenshots
-└── README.md             # Project documentation
-
----
-
-**🔹 Technologies Used**
+## 🔹 Technologies Used
 
 -Python (Pandas, NumPy, Scikit-learn, Statsmodels, XGBoost)
 -Flask (for API deployment)
