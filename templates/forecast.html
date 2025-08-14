@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-Day Demand Forecast</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .forecast-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px
+        }
+        .forecast-plot {
+            flex: 1;
+        }
+        .forecast-table {
+            flex-shrink: 0;
+            width: 250px;
+            display: flex;
+            flex-direction: column; /* fixed width so plot doesn’t shrink */
+        }
+         .forecast-table .card-body { /* CHANGED */
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .forecast-table .table-responsive { /* CHANGED */
+            max-height: 100%;
+            overflow-y: auto;
+        }
+        .forecast-table table {
+            font-size: 0.9rem;
+        }
+        .forecast-table th, .forecast-table td {
+            padding: 4px 6px;
+            text-align: center;
+        }
+        .forecast-table thead {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    
+<div class="container mt-5">
+    <h1 class="mb-4">7-Day Demand Forecast</h1>
+    <div class="forecast-container">
+        <!--plot-->
+        <div class="forecast-plot">
+            <img src="{{ plot_url }}" alt="Forecast Plot" class="img-fluid border rounded shadow-sm">
+            <div class="mt-4">
+                <a href="/" class="btn btn-secondary">Back to Home</a>
+            </div>
+        </div>
+    
+        <div class="forecast-table card shadow-sm">
+            <div class="card-body p-2">
+                <h6 class="text-center mb-2">Forecast Values</h6>
+                <div class="table-responsive" style="max-height: 400px; overflow-y: auto;">
+                    <table class="table table-sm table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Forecast</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for record in forecast_records %}
+                            <tr>
+                                <td>{{ record['Date'] }}</td>
+                                <td>{{ "%.2f"|format(record['Forecast_Demand']) }}</td>
+                            </tr>
+                            {% endfor %}
+                         </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
