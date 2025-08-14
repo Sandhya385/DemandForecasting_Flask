@@ -72,13 +72,13 @@ features= ['price', 'promotion', 'holiday', 'temperature',
 X=df[features]
 y=df['demand']
 #model=XGBRegressor(objective="reg:squarederror", random_state=42)
-model=joblib.load("xgb_model.pkl")
+model=joblib.load("./xgb_model.pkl")
 model.fit(X,y)
 joblib.dump(model,"model.pkl")
 
 
 def generate_forecast_plot():
-    model = joblib.load("xgb_model.pkl")
+    model = joblib.load("./xgb_model.pkl")
     hist_df = df.copy()
 
     future_dates = [hist_df['date'].max() + timedelta(days=i) for i in range(1, 8)]
