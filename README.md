@@ -39,10 +39,11 @@ The API is hosted at:
 
 ---
 ## 🔹 Screenshots ##
--Power BI Dashboard (screenshots/powerbi_dashboard.PNG)
--Flask API UI (screenshots/flask_API_UI.PNG)
--7day forecast (screenshots/forecast.PNG)
--Single record simulation (screenshots/Simulation_Singlerecord.PNG)
+-Power BI Dashboard--screenshots/powerbi_dashboard.PNG
+-Flask API UI--screenshots/flask_API_UI.PNG
+-7day forecast --screenshots/forecast.PNG
+-Single record simulation--screenshots/Simulation_Singlerecord.PNG
+
 
 ### 🔹Forecast Accuracy -
 - **SARIMAX**: RMSE = 20.09, MAE = 17.22 
@@ -65,6 +66,23 @@ The API is hosted at:
 -Power BI (for visualization)
 -Render (for hosting)
 -Matplotlib / Seaborn (for plots)
+
+
+### 🔹How to Run Locally
+# 1. Clone repo
+git clone https://github.com/username/demand_forecasting.git
+cd demand_forecasting
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Run Flask API
+python app.py
+
+# 4. Access API
+http://127.0.0.1:5000/forecast
+
+
 
 
 
