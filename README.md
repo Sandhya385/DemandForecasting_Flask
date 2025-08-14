@@ -1,11 +1,13 @@
 # 📈 Demand Forecasting with Flask API & Power BI
 
 ## 🔹 Project Overview
-This project predicts **future demand** for a single product based on **3.5 years of historical sales data**.  
-The forecasting is performed using **SARIMAX** and **XGBoost**, deployed via a **Flask API** on Render,  
-and visualized with an **interactive Power BI dashboard**.
+This project predicts **future demand** for a single product using **3.5 years of historical sales data**.
+The forecasting is performed using **SARIMAX** (statistical approach) and **XGBoost**(machine learning approach).
 
-The goal is to provide accurate short-term demand forecasts for decision-making in supply chain and inventory management.
+The project includes:
+-A **Flask API** deployed on Render for real-time forecasting
+-An **interactive Power BI dashboard** for visualization and insights
+-Simulation capabilities to test hypothetical demand scenarios
 
 ---
 
@@ -14,7 +16,9 @@ The goal is to provide accurate short-term demand forecasts for decision-making 
 - 🌐 **Flask API Deployment** (hosted on Render)
 - 📊 **Interactive Power BI Dashboard**
 - ✅ **Model Evaluation** with RMSE & MAE
-- 📂 **Simulation Mode** for hypothetical scenarios
+- 🎯 **7-Day Rolling Forecast** 
+- 🧪 **Simulation Mode** for “what-if” scenarios
+- 📂 **Daily Forecast Updates** possible via API
 
 ---
 
@@ -25,17 +29,20 @@ The goal is to provide accurate short-term demand forecasts for decision-making 
 ---
 
 ## 🔹 Project Workflow
-1. **Data Preprocessing** – Clean and prepare the dataset.
-2. **Model Training** – Train SARIMAX and XGBoost models.
-3. **Forecasting** – Predict demand for the next 7 days.
-4. **Deployment** – Deploy the Flask API on Render.
-5. **Visualization** – Build Power BI dashboard for results.
+1. **Data Preprocessing** – Cleaning, formatting dates, handling missing values.
+2. **Feature Engineering** – Adding time-based features, lags, and rolling means
+3. **Model Training** – SARIMAX for trend/seasonality & XGBoost for patterns in features
+4. **Model Evaluation** – RMSE and MAE calculated for both models
+5. **Forecasting** – Generating 7-day forecast results
+6. **API Development** – Building /forecast endpoint in Flask
+7. **Deployment** – Hosting Flask API on Render
+8. **Visualization** – Connecting API results to Power BI dashboard
 
 ---
 
-## 🔹 Flask API
-The API is hosted at:  
-**https://demandforecasting-flask-1.onrender.com/**
+## 🔹 Flask API 
+**Live API URL**
+🔗 https://demandforecasting-flask-1.onrender.com/
 
 ---
 ## 🔹 Screenshots ##
@@ -66,6 +73,25 @@ The API is hosted at:
 -Power BI (for visualization)
 -Render (for hosting)
 -Matplotlib / Seaborn (for plots)
+
+## DemandForecasting_Flask/
+│── app.py                  # Flask API script
+│── requirements.txt        # Python dependencies
+│── predictions.ipynb       # Historical dataset
+│── runtime.txt             # Python version
+│── xgb_model.pkl           # Trained XGBoost model
+|── DemandForecasting.pbix  # PowerBI
+│── templates/
+│    └── index.html         # API UI template
+     └── forecast.html      # 7 days forecast
+     └── simulate.html      # Predicted value for single entry
+      
+│── screenshots/
+│    ├── powerbi_dashboard.PNG
+│    ├── flask_API_UI.PNG
+│    ├── forecast.PNG
+│    └── Simulation_Singlerecord.PNG
+
 
 
 ### 🔹How to Run Locally
