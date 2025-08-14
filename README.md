@@ -24,7 +24,7 @@ The forecasting is performed using **SARIMAX** and **XGBoost**, deployed as a Fl
 ---
 
 ## 🔹 Power BI Dashboard
-![Power BI Screenshot](powerbi_dashboard.png)
+![Power BI Screenshot](powerbi_dashboard.PNG)
 
 ---
 
