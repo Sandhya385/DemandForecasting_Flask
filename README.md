@@ -45,12 +45,16 @@ The project includes:
 🔗 https://demandforecasting-flask-1.onrender.com/
 
 ---
-## 🔹 Screenshots ##
--Power BI Dashboard--screenshots/powerbi_dashboard.PNG
--Flask API UI--screenshots/flask_API_UI.PNG
--7day forecast --screenshots/forecast.PNG
--Single record simulation--screenshots/Simulation_Singlerecord.PNG
+## 🔹 Screenshots
 
+| Feature                       | Screenshot |
+|--------------------------------|------------|
+| **Power BI Dashboard**         | ![Power BI Dashboard](screenshots/powerbi_dashboard.PNG) |
+| **Flask API UI**                | ![Flask API UI](screenshots/flask_API_UI.PNG) |
+| **7-Day Forecast**              | ![7-Day Forecast](screenshots/forecast.PNG) |
+| **Single Record Simulation**    | ![Single Record Simulation](screenshots/Simulation_Singlerecord.PNG) |
+
+---
 
 ### 🔹Forecast Accuracy -
 - **SARIMAX**: RMSE = 20.09, MAE = 17.22 
@@ -91,6 +95,7 @@ The project includes:
 │    ├── flask_API_UI.PNG
 │    ├── forecast.PNG
 │    └── Simulation_Singlerecord.PNG
+│── README.md
 
 
 
